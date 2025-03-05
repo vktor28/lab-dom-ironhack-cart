@@ -65,12 +65,11 @@ function createProduct() {
   createRow.classList.add("product");
   createRow.innerHTML = tableProduct;
   tbody.appendChild(createRow);
-  document.querySelectorAll(".create-product td input")[0]
-    .value = "";
-    document.querySelectorAll(".create-product td input")[1]
-    .value = "";
-    createRow.querySelectorAll(".btn-remove").addEventListener("click", removeProduct);
-
+  document.querySelectorAll(".create-product td input")[0].value = "";
+  document.querySelectorAll(".create-product td input")[1].value = "";
+  createRow
+    .querySelector(".btn-remove")
+    .addEventListener("click", removeProduct);
 
   //... your code goes here
 }
